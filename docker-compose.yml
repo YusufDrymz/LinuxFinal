@@ -8,16 +8,16 @@ services:
     environment:
       - MARIADB_HOST=db
       - MARIADB_PORT_NUMBER=3306
-      - DRUPAL_DATABASE_USER=${USER}
-      - DRUPAL_DATABASE_PASSWORD=${PASSWORD}
-      - DRUPAL_DATABASE_NAME=${DATABASE}
+      - DRUPAL_DATABASE_USER=YAM428
+      - DRUPAL_DATABASE_PASSWORD='030121008'
+      - DRUPAL_DATABASE_NAME=final
 
   db:
     image: bitnami/mariadb:latest
     environment:
-      - MARIADB_USER=${USER}
-      - MARIADB_PASSWORD=${PASSWORD}
-      - MARIADB_DATABASE=${DATABASE}
+      - MARIADB_USER=YAM428
+      - MARIADB_PASSWORD='030121008'
+      - MARIADB_DATABASE=final
 
   webserver:
     image: nginx
